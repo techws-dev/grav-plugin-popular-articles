@@ -29,7 +29,20 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
-    text_var:
+    
+    blog_route:
       type: text
-      label: PLUGIN_POPULAR_ARTICLES.TEXT_VARIABLE
-      help: PLUGIN_POPULAR_ARTICLES.TEXT_VARIABLE_HELP
+      label: PLUGIN_POPULAR_ARTICLES.BLOG_ROUTE_LABEL
+      default: /blog
+      placeholder: /blog
+      validate:
+        pattern: '/([a-z\-_]+/?)+'
+    
+    articles_count:
+      type: range
+      label: PLUGIN_POPULAR_ARTICLES.ARTICLES_COUNT_LABEL
+      default: 5
+      validate:
+        type: number
+        min: 1
+        max: 10
