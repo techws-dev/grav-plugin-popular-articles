@@ -2,7 +2,9 @@
 
 **This README.md file should be modified to describe the features, installation, configuration, and general usage of the plugin.**
 
-The **Popular Articles** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). Display a list of the most popular articles from a blog
+The **Popular Articles** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). Display a list of links to the most popular articles from a blog.
+
+> NOTE: This plugin requires the admin plugin to be installed.
 
 ## Installation
 
@@ -37,20 +39,46 @@ Before configuring this plugin, you should copy the `user/plugins/popular-articl
 Here is the default configuration and an explanation of available options:
 
 ```yaml
-enabled: true
+enabled:            true
+blog_route:         /blog   # route under where the articles can be found
+articles_count:     5       # number of articles displayed
 ```
 
 Note that if you use the Admin Plugin, a file with your configuration named popular-articles.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
 
 ## Usage
 
-**Describe how to use the plugin.**
+Just add the lines in the templates you want to display the list:
 
-## Credits
+```twig
+{% if config.plugins['popular-articles'].enabled %}
+	{% include 'partials/popular_articles.html.twig' %}
+{% endif %}
+```
 
-**Did you incorporate third-party code? Want to thank somebody?**
+Don't forget to enable the plugin in the plugin configuration (see above).
+
+It's recommended to override the original template to suit your needs (then save it to templates/partials/popular_articles.html.twig in your theme):
+
+```twig
+{% set articles_list = popular_articles.get() %}
+
+<h4>
+    {{ 'PLUGIN_POPULAR_ARTICLES.POPULAR_ARTICLES'|t }}
+</h4>
+
+<ul>
+    {% for article in articles_list %}
+    <li>
+        <a href="{{ base_url }}{{ article.route }}">
+            {{ article.title }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+```
 
 ## To Do
 
-- [ ] Future plans, if any
+- add title translations (only english and french right now)
 
