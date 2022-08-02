@@ -1,5 +1,5 @@
-# v0.1.0
+# v1.0.0
 ##  08/02/2022
 
 1. [](#new)
-    * ChangeLog started...
+    * Default plugin functionalities

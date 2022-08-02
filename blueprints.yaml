@@ -3,7 +3,7 @@ slug: popular-articles
 type: plugin
 version: 1.0.0
 description: Display a list of the most popular articles from a blog
-icon: plug
+icon: star
 author:
   name: Tanguy Dechiron
   email: tanguy.dechiron@gmail.com
