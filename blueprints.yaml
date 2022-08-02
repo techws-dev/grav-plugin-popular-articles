@@ -8,8 +8,7 @@ author:
   name: Tanguy Dechiron
   email: tanguy.dechiron@gmail.com
 homepage: https://github.com/tanguy-dechiron/grav-plugin-popular-articles
-demo: http://demo.yoursite.com
-keywords: grav, plugin, etc
+keywords: grav, plugin, popular, articles, list
 bugs: https://github.com/tanguy-dechiron/grav-plugin-popular-articles/issues
 docs: https://github.com/tanguy-dechiron/grav-plugin-popular-articles/blob/develop/README.md
 license: MIT
