@@ -3,6 +3,7 @@ namespace Grav\Plugin;
 
 use Composer\Autoload\ClassLoader;
 use Grav\Common\Plugin;
+use Grav\Plugin\PopularArticles\PopularArticles;
 
 /**
  * Class PopularArticlesPlugin
@@ -24,8 +25,7 @@ class PopularArticlesPlugin extends Plugin
     {
         return [
             'onPluginsInitialized' => [
-                // Uncomment following line when plugin requires Grav < 1.7
-                // ['autoload', 100000],
+                ['autoload', 100000], // TODO: Remove when plugin requires Grav >=1.7
                 ['onPluginsInitialized', 0]
             ]
         ];
@@ -53,7 +53,25 @@ class PopularArticlesPlugin extends Plugin
 
         // Enable the main events we are interested in
         $this->enable([
-            // Put your main events here
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
+            'onTwigSiteVariables' => ['onTwigSiteVariables', 0]
         ]);
+    }
+
+    /**
+     * Add current directory to twig lookup paths.
+     */
+    public function onTwigTemplatePaths()
+    {
+        $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
+    }
+
+    /**
+     * Set needed variables to display the popular articles.
+     */
+    public function onTwigSiteVariables()
+    {
+        $twig = $this->grav['twig'];
+        $twig->twig_vars['popular_articles'] = new PopularArticles();
     }
 }

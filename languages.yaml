@@ -1,4 +1,9 @@
 en:
   PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Popular articles
     BLOG_ROUTE_LABEL: Route to blog
     ARTICLES_COUNT_LABEL: Number of articles to display
+
+fr:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Articles populaires

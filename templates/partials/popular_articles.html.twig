@@ -1,0 +1,15 @@
+{% set articles_list = popular_articles.get() %}
+
+<h4>
+    {{ 'PLUGIN_POPULAR_ARTICLES.POPULAR_ARTICLES'|t }}
+</h4>
+
+<ul>
+    {% for article in articles_list %}
+    <li>
+        <a href="{{ base_url }}{{ article.route }}">
+            {{ article.title }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
