@@ -1,7 +1,5 @@
 # Popular Articles Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of the plugin.**
-
 The **Popular Articles** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). Display a list of links to the most popular articles from a blog.
 
 > NOTE: This plugin requires the admin plugin to be installed.
@@ -78,7 +76,4 @@ It's recommended to override the original template to suit your needs (then save
 </ul>
 ```
 
-## To Do
-
-- add title translations (only english and french right now)
 

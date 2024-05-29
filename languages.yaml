@@ -4,6 +4,58 @@ en:
     BLOG_ROUTE_LABEL: Route to blog
     ARTICLES_COUNT_LABEL: Number of articles to display
 
+de:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Populäre artikel
+
+es:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Articulos populares
+
 fr:
   PLUGIN_POPULAR_ARTICLES:
     POPULAR_ARTICLES: Articles populaires
+
+hr:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Popularni članci
+
+hu:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Népszerű cikkek
+
+it:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Articoli popolari
+
+ja:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: 人気の記事
+
+lt:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Populiarūs straipsniai
+
+no:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Populære artikler
+
+pt:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Artigos populares
+
+ro:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: Articole populare
+
+ru:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: популярные статьи
+
+uk:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: популярні статті
+
+zh:
+  PLUGIN_POPULAR_ARTICLES:
+    POPULAR_ARTICLES: 热门文章
