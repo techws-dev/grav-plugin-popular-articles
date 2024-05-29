@@ -1,7 +1,7 @@
 name: Popular Articles
 slug: popular-articles
 type: plugin
-version: 1.0.0
+version: 1.0.1
 description: Display a list of the most popular articles from a blog
 icon: star
 author:
@@ -14,8 +14,8 @@ docs: https://github.com/tanguy-dechiron/grav-plugin-popular-articles/blob/devel
 license: MIT
 
 dependencies:
-  - { name: grav, version: '>=1.6.0' }
-  - { name: admin, version: '>=1.0.0' }
+  - { name: grav, version: '>=1.7.0' }
+  - { name: admin, version: '>=1.10.0' }
 
 form:
   validation: loose

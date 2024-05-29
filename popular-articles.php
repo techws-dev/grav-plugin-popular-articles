@@ -24,10 +24,7 @@ class PopularArticlesPlugin extends Plugin
     public static function getSubscribedEvents(): array
     {
         return [
-            'onPluginsInitialized' => [
-                ['autoload', 100000], // TODO: Remove when plugin requires Grav >=1.7
-                ['onPluginsInitialized', 0]
-            ]
+            'onPluginsInitialized' => ['onPluginsInitialized', 0],
         ];
     }
 
