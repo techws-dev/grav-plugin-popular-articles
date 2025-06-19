@@ -7,10 +7,10 @@ icon: star
 author:
   name: Tanguy Dechiron
   email: tanguy.dechiron@gmail.com
-homepage: https://github.com/tanguy-dechiron/grav-plugin-popular-articles
+homepage: https://github.com/techws-dev/grav-plugin-popular-articles
 keywords: grav, plugin, popular, articles, list
-bugs: https://github.com/tanguy-dechiron/grav-plugin-popular-articles/issues
-docs: https://github.com/tanguy-dechiron/grav-plugin-popular-articles/blob/develop/README.md
+bugs: https://github.com/techws-dev/grav-plugin-popular-articles/issues
+docs: https://github.com/techws-dev/grav-plugin-popular-articles/blob/main/README.md
 license: MIT
 
 dependencies:
